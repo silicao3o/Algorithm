@@ -1,17 +1,8 @@
 public class Algorithm {
-    public int solution(int angle) {
-        int answer;
-        if(angle > 0 && angle < 90){
-            answer = 1;
-        }
-        else if(angle == 90){
-            answer = 2;
-        }
-        else if(angle > 90 && angle < 180){
-            answer = 3;
-        }
-        else {
-            answer = 4;
+    public int solution(int n) {
+        int answer = 0;
+        for(int i = 0; i <= n; i+=2){
+            answer += i;
         }
         return answer;
     }
