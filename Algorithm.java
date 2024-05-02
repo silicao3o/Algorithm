@@ -1,14 +1,13 @@
 public class Algorithm {
-    public double solution(int[] numbers) {
-        double answer = 0;
+    public String solution(int num) {
+        String answer = "";
 
-        int sum = 0;
-        for(int i : numbers){
-            sum += i;
+        if( num % 2 == 0){
+            answer = "Even";
         }
-
-        answer = sum / (double)numbers.length;
-
+        else{
+            answer = "Odd";
+        }
         return answer;
     }
 }
